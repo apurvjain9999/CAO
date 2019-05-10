@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul4
+ERROR: [VRFC 10-1243] port mp must not be declared to be an array [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:24]
+ERROR: [VRFC 10-1243] port ml must not be declared to be an array [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:25]
+ERROR: [VRFC 10-1243] port pro must not be declared to be an array [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:26]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net pr1 is not permitted [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:36]
+ERROR: [VRFC 10-402] cannot assign to memory pr1 directly [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:36]
+ERROR: [VRFC 10-394] cannot access memory ml directly [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:36]
+ERROR: [VRFC 10-800] illegal concatenation of unpacked value [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:36]
+ERROR: [VRFC 10-394] cannot access memory w1 directly [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:41]
+ERROR: [VRFC 10-394] cannot access memory w2 directly [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:43]
+ERROR: [VRFC 10-1221] part-select of memory pr1 is not allowed [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:43]
+ERROR: [VRFC 10-402] cannot assign to memory pro directly [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:55]
+ERROR: [VRFC 10-394] cannot access memory pr1 directly [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:55]
+ERROR: [VRFC 10-2787] module mul4 ignored due to previous errors [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:23]

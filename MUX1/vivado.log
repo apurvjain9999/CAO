@@ -1,0 +1,589 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 13 11:09:24 2019
+# Process ID: 4236
+# Current directory: C:/Users/HP/Desktop/CAO/MUX1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10564 C:\Users\HP\Desktop\CAO\MUX1\MUX1.xpr
+# Log file: C:/Users/HP/Desktop/CAO/MUX1/vivado.log
+# Journal file: C:/Users/HP/Desktop/CAO/MUX1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/HP/Desktop/CAO/MUX1/MUX1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILLINX/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 858.617 ; gain = 153.227
+update_compile_order -fileset sources_1
+close [ open C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v w ]
+add_files C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v
+update_compile_order -fileset sources_1
+set_property top mux2 [current_fileset]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux.v:]
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+Run is defaulting to parent run srcset: sources_1
+Run is defaulting to parent run constrset: constrs_1
+Run is defaulting to parent run part: xc7a100tiftg256-1L
+current_run [get_runs impl_2]
+set_property part xc7a35tcpg236-1 [current_project]
+update_ip_catalog
+update_ip_catalog
+close [ open C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v w ]
+add_files C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v w ]
+add_files -fileset sim_1 C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v
+update_compile_order -fileset sim_1
+set_property top tbm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2458] undeclared symbol o, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v" into library xil_defaultlib
+ERROR: [VRFC 10-452] cannot open include file mux4.v [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:1]
+INFO: [VRFC 10-311] analyzing module tbm
+ERROR: [VRFC 10-2787] module tbm ignored due to previous errors [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:2]
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 918.035 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 918.035 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2458] undeclared symbol o, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v" into library xil_defaultlib
+ERROR: [VRFC 10-452] cannot open include file mux4.v [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:1]
+INFO: [VRFC 10-311] analyzing module tbm
+ERROR: [VRFC 10-2787] module tbm ignored due to previous errors [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:2]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 922.512 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 922.512 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2458] undeclared symbol o, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v" into library xil_defaultlib
+ERROR: [VRFC 10-452] cannot open include file mux4.v [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:1]
+INFO: [VRFC 10-311] analyzing module tbm
+ERROR: [VRFC 10-1412] syntax error near end [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:51]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword end used in incorrect context [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:51]
+ERROR: [VRFC 10-2787] module tbm ignored due to previous errors [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:2]
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 922.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '23' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 922.512 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2458] undeclared symbol o, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v" into library xil_defaultlib
+ERROR: [VRFC 10-452] cannot open include file mux4.v [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:1]
+INFO: [VRFC 10-311] analyzing module tbm
+ERROR: [VRFC 10-2787] module tbm ignored due to previous errors [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:2]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2458] undeclared symbol o, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v" into library xil_defaultlib
+ERROR: [VRFC 10-452] cannot open include file mux4.v [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:1]
+INFO: [VRFC 10-311] analyzing module tbm
+ERROR: [VRFC 10-2787] module tbm ignored due to previous errors [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v:2]
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2458] undeclared symbol o, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbm
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d43883ea070b4b07b960ff1f33f1a27a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tbm_behav xil_defaultlib.tbm xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.tbm
+Compiling module xil_defaultlib.glbl
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:02:00 . Memory (MB): peak = 926.676 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:02:03 . Memory (MB): peak = 926.676 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d43883ea070b4b07b960ff1f33f1a27a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tbm_behav xil_defaultlib.tbm xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.tbm
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbm_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xsim.dir/tbm_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 55.133 ; gain = 0.855
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 13 12:30:17 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:38 . Memory (MB): peak = 926.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '38' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbm_behav -key {Behavioral:sim_1:Functional:tbm} -tclbatch {tbm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tbm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 954.668 ; gain = 27.992
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:48 . Memory (MB): peak = 954.668 ; gain = 27.992
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 954.668 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d43883ea070b4b07b960ff1f33f1a27a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tbm_behav xil_defaultlib.tbm xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 954.668 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+saif open -scope uut -file uut_backward.saif -allnets
+invalid command name "saif"
+open -scope uut -file uut_backward.saif -allnets
+wrong # args: should be "open fileName ?access? ?permissions?"
+saif open
+invalid command name "saif"
+sudo -apt install saif
+invalid command name "sudo"
+open_saif mux.saif
+ERROR: [Simulator 45-6] No active Vivado Simulator simulation.  To use this command you must first start a simulation using Vivado Simulator.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tbm_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d43883ea070b4b07b960ff1f33f1a27a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tbm_behav xil_defaultlib.tbm xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbm_behav -key {Behavioral:sim_1:Functional:tbm} -tclbatch {tbm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tbm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 954.668 ; gain = 0.000
+open_saif mux.saif
+saif1
+run 100 ps
+run 100 ns
+close_saif
+set_property top tb1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d43883ea070b4b07b960ff1f33f1a27a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb1_behav xil_defaultlib.tb1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port B1 on this module [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v:35]
+ERROR: [VRFC 10-426] cannot find port B0 on this module [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v:34]
+ERROR: [VRFC 10-426] cannot find port A1 on this module [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v:33]
+ERROR: [VRFC 10-426] cannot find port A0 on this module [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 954.668 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2458] undeclared symbol t5, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d43883ea070b4b07b960ff1f33f1a27a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb1_behav xil_defaultlib.tb1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.tb1
+Compiling module xil_defaultlib.glbl
+LLVM ERROR: IO failure on output stream.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s) while executing 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/elaborate.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+no space left on device
+    while executing
+"close $fh_scr"
+    (procedure "usf_xsim_write_compile_script" line 522)
+    invoked from within
+"usf_xsim_write_compile_script scr_filename"
+    (procedure "tclapp::xilinx::xsim::compile" line 10)
+    invoked from within
+"tclapp::xilinx::xsim::compile { -simset sim_1 -mode behavioral -run_dir C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim -int_os_type 64 -int_de..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+ERROR: [Project 1-126] XML parser encountered a problem in C:/Users/HP/Desktop/CAO/MUX1/MUX1.xpr at line 1 : Unexpected end of message
+launch_simulation
+ERROR: [Project 1-126] XML parser encountered a problem in C:/Users/HP/Desktop/CAO/MUX1/MUX1.xpr at line 1 : Unexpected end of message
+launch_simulation
+ERROR: [Project 1-126] XML parser encountered a problem in C:/Users/HP/Desktop/CAO/MUX1/MUX1.xpr at line 1 : Unexpected end of message
+launch_simulation
+ERROR: [Project 1-126] XML parser encountered a problem in C:/Users/HP/Desktop/CAO/MUX1/MUX1.xpr at line 1 : Unexpected end of message
+set_property top mux [current_fileset]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2458] undeclared symbol t5, assumed default net type wire [C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d43883ea070b4b07b960ff1f33f1a27a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb1_behav xil_defaultlib.tb1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.tb1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb1_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/xsim.dir/tb1_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 55.266 ; gain = 1.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 13 12:50:08 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 955.523 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb1_behav -key {Behavioral:sim_1:Functional:tb1} -tclbatch {tb1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 962.172 ; gain = 6.648
+update_compile_order -fileset sources_1
+open_saif mux1.saif
+saif1
+close_saif
+open_saif mux1.saif
+saif1
+run 100 ns
+close_saif
+launch_runs impl_2 -jobs 2
+[Wed Feb 13 12:53:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/HP/Desktop/CAO/MUX1/MUX1.runs/synth_1/runme.log
+[Wed Feb 13 12:53:18 2019] Launched impl_2...
+Run output will be captured here: C:/Users/HP/Desktop/CAO/MUX1/MUX1.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.572 . Memory (MB): peak = 1262.504 ; gain = 0.078
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.573 . Memory (MB): peak = 1262.504 ; gain = 0.078
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1340.289 ; gain = 366.215
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1857.320 ; gain = 434.871
+set_property top tbm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+reset_run impl_2
+launch_runs impl_2 -jobs 2
+[Wed Feb 13 12:58:14 2019] Launched impl_2...
+Run output will be captured here: C:/Users/HP/Desktop/CAO/MUX1/MUX1.runs/impl_2/runme.log
+read_saif {C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/mux.saif}
+INFO: [Power 33-167] Parsing SAIF file C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/mux.saif
+INFO: [Power 33-177] SAIF annotation done from file C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/mux.saif
+INFO: [Power 33-26] Design nets matched = 0 of 14
+report_power -name {power_2}
+Command: report_power -name power_2
+0% of nets annotated
+Doing probabilistic computation for the remaining nets
+
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power -name {power_3}
+Command: report_power -name power_3
+0% of nets annotated
+Doing probabilistic computation for the remaining nets
+
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1857.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 13 13:03:00 2019...

@@ -1,0 +1,7 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/HP/Desktop/CAO/labs/l2/FullAdder.v,1553339580,verilog,,C:/Users/HP/Desktop/CAO/labs/l2/carry_lookahead_adder.v,,FullAdder,,,,,,,,
+C:/Users/HP/Desktop/CAO/labs/l2/carry_lookahead_adder.v,1554274559,verilog,,,C:/Users/HP/Desktop/CAO/labs/l2/FullAdder.v,carry_lookahead_adder,,,,,,,,

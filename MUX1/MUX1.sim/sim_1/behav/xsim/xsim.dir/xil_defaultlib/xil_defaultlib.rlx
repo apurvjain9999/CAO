@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/HP/Desktop/CAO/MUX1/MUX1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v,1550042297,verilog,,,,tb1,,,,,,,,
+C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v,1550509942,verilog,,,,tbm,,,,,,,,
+C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux.v,1549190362,verilog,,C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tb1.v,,mux,,,,,,,,
+C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux2.v,1550037421,verilog,,C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v,,mux2,,,,,,,,
+C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sources_1/new/mux4.v,1550037788,verilog,,C:/Users/HP/Desktop/CAO/MUX1/MUX1.srcs/sim_1/new/tbm.v,,mux4,,,,,,,,

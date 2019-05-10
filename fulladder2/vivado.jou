@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 13 09:24:52 2019
+# Process ID: 13264
+# Current directory: C:/Users/HP/Desktop/CAO/fulladder2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9296 C:\Users\HP\Desktop\CAO\fulladder2\fulladder2.xpr
+# Log file: C:/Users/HP/Desktop/CAO/fulladder2/vivado.log
+# Journal file: C:/Users/HP/Desktop/CAO/fulladder2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/sources_1/new/carry_lookahead.v w ]
+add_files C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/sources_1/new/carry_lookahead.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/sim_1/new/carry_lookahead_adder.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/sim_1/new/carry_lookahead_adder.v
+file delete -force C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/sim_1/new/carry_lookahead_adder.v
+update_compile_order -fileset sim_1
+set_property top carry_lookahead [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source carry_lookahead.tcl
+add_force {/carry_lookahead/i_add1} -radix bin {1111 0ns}
+add_force {/carry_lookahead/i_add2} -radix bin {1111 0ns}
+run 10 ps
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file mkdir C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/constrs_1
+file mkdir C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/constrs_1/new
+close [ open C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/constrs_1/new/CLA_const.xdc w ]
+add_files -fileset constrs_1 C:/Users/HP/Desktop/CAO/fulladder2/fulladder2.srcs/constrs_1/new/CLA_const.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+config_webtalk -user on
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7a35tcpg236-1 [current_project]
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+wait_on_run impl_2
+open_run impl_2
+close_sim

@@ -1,0 +1,18 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILLINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 189bbea786d64868b2f5d181acd3454f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ml_behav xil_defaultlib.ml xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port cin [C:/Users/HP/Desktop/CAO/labs/ml.v:60]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port cin [C:/Users/HP/Desktop/CAO/labs/ml.v:75]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port cin [C:/Users/HP/Desktop/CAO/labs/ml.v:78]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port y [C:/Users/HP/Desktop/CAO/labs/ml.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/HP/Desktop/CAO/prac/mul/mul.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_add
+Compiling module xil_defaultlib.ml
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ml_behav

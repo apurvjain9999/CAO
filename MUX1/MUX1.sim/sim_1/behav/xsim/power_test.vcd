@@ -1,0 +1,90 @@
+$date
+   Mon Feb 18 22:49:49 2019
+$end
+$version
+  2018.2
+$end
+$timescale
+  1ps
+$end
+$scope module tbm $end
+$var reg 1 ! s0 $end
+$var reg 1 " s1 $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % c $end
+$var reg 1 & d $end
+$var wire 1 ' o $end
+$scope module mux_inst $end
+$var wire 1 ( A0 $end
+$var wire 1 ) A1 $end
+$var wire 1 * B0 $end
+$var wire 1 + B1 $end
+$var wire 1 , S0 $end
+$var wire 1 - S1 $end
+$var wire 1 ' O $end
+$var wire 1 . t1 $end
+$var wire 1 / t2 $end
+$scope module m1 $end
+$var wire 1 ( A $end
+$var wire 1 ) B $end
+$var wire 1 , S $end
+$var wire 1 . O $end
+$var wire 1 0 t1 $end
+$var wire 1 1 t2 $end
+$var wire 1 2 t3 $end
+$var wire 1 3 o $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 , S $end
+$var wire 1 / O $end
+$var wire 1 4 t1 $end
+$var wire 1 5 t2 $end
+$var wire 1 6 t3 $end
+$var wire 1 7 o $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 . A $end
+$var wire 1 / B $end
+$var wire 1 - S $end
+$var wire 1 ' O $end
+$var wire 1 8 t1 $end
+$var wire 1 9 t2 $end
+$var wire 1 : t3 $end
+$var wire 1 ; o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+0#
+1$
+0%
+1&
+z'
+0(
+1)
+0*
+1+
+1,
+1-
+z.
+z/
+00
+11
+02
+13
+04
+15
+06
+17
+08
+x9
+0:
+x;
+$end

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr  3 12:49:22 2019
+# Process ID: 14788
+# Current directory: C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.runs/synth_1
+# Command line: vivado.exe -log mul4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul4.tcl
+# Log file: C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.runs/synth_1/mul4.vds
+# Journal file: C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mul4.tcl -notrace
+Command: synth_design -top mul4 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11088 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 409.609 ; gain = 96.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mul4' [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:23]
+ERROR: [Synth 8-36] 'carry_lookahead_adder' is not declared [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:41]
+ERROR: [Synth 8-6156] failed synthesizing module 'mul4' [C:/Users/HP/Desktop/CAO/labs/eval1/mul/mul.srcs/sources_1/new/mul4.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 464.559 ; gain = 151.250
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  3 12:49:38 2019...

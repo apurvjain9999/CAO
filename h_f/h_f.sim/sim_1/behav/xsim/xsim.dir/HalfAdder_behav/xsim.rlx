@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4369728335450978967  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto aaa03c0663134aeaa186da725f6c2c52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot HalfAdder_behav xil_defaultlib.HalfAdder xil_defaultlib.glbl" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:41:02" , 
+    linkCmd : "D:\\XILLINX\\Vivado\\2018.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/HalfAdder_behav/xsimk.exe\"   \"xsim.dir/HalfAdder_behav/obj/xsim_0.win64.obj\" \"xsim.dir/HalfAdder_behav/obj/xsim_1.win64.obj\" \"D:\\XILLINX\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"D:\\XILLINX\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

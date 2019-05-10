@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/labs/ml.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_add
+INFO: [VRFC 10-311] analyzing module ml
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/CAO/prac/mul/mul.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
